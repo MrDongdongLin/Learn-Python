@@ -59,4 +59,5 @@ Some packages
 ```
 activate-power-mode
 hydrogen
+ctrl + enter: run a script
 ```
