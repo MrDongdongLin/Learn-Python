@@ -1,2 +1,6 @@
 import cv2
-cv2.imread('Lena.bmp')
+from matplotlib import pyplot as plt
+img = cv2.imread('Lena.bmp')
+
+plt.imshow(img)
+plt.show()
