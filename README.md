@@ -58,6 +58,28 @@ plt.savefig('saveimg.pdf', bbox_inches='tight', pad_inches = 0)
 plt.close()
 ```
 
+## nolds
+Nolds only consists of a single module called nolds which contains all relevant algorithms and helper functions.
+[DOCUMENT](https://cschoel.github.io/nolds/nolds.html)
+
+### Algorithms
+- Lyapunov exponent (Rosenstein et al.)
+```python
+nolds.lyap_r(data, emb_dim=10, lag=None, min_tsep=None, tau=1, min_neighbors=20, trajectory_len=20, fit='RANSAC', debug_plot=False, debug_data=False, plot_file=None, fit_offset=0, min_vectors=None)
+```
+- Lyapunov exponent (Eckmann et al.)
+```python
+nolds.lyap_e(data, emb_dim=10, matrix_dim=4, min_nb=None, min_tsep=0, tau=1, debug_plot=False, debug_data=False, plot_file=None)
+```
+### mesurese.py
+```python
+def test_lyap():
+  ...
+  # return Largest Lyapunov Exponent (le).
+  le = lyap_e(np.array(full_data), emb_dim=6, matrix_dim=2)
+  ...
+```
+
 ## Atom
 Some packages
 ```
