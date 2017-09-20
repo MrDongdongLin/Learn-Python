@@ -71,7 +71,7 @@ nolds.lyap_r(data, emb_dim=10, lag=None, min_tsep=None, tau=1, min_neighbors=20,
 ```python
 nolds.lyap_e(data, emb_dim=10, matrix_dim=4, min_nb=None, min_tsep=0, tau=1, debug_plot=False, debug_data=False, plot_file=None)
 ```
-### mesurese.py
+### mesures.py
 ```python
 def test_lyap():
   ...
