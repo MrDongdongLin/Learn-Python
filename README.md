@@ -5,6 +5,21 @@
 
 This packages recodes come study notes of Python
 
+## file operation
+Open a txt file and read by lines
+```python
+ecg = open('data/ecg_signal/118e12.txt')
+	data = []
+	try:
+		for line in ecg.readlines():
+			line = line[:-1]
+			data.append(line)
+    # convert data to np.array with type of float
+		data = np.array(data, dtype=float)
+	finally:
+		ecg.close()
+```
+
 ## python-opencv
 To use opencv in python, some packages must be installed:
 ```python
