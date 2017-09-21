@@ -36,6 +36,11 @@ More informations can be found [here](http://docs.opencv.org/3.0-beta/doc/py_tut
 
 ## numpy
 Ref [here](https://docs.scipy.org/doc/numpy-dev/user/numpy-for-matlab-users.html) to see the difference of numpy and Matlab.
+- Reshape
+Suppose str is a string of length $n\cdot n$, now we want a matrix M of size $n\times n$, then we can do
+```python
+M = np.array(str).reshape(n, n)
+```
 
 ## matplotlib
 Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
